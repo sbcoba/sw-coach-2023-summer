@@ -16,10 +16,7 @@ jobs:
     - uses: actions/setup-java@v3
       with:
         distribution: temurin
-        java-version: 17 
-        
-    - name: Gradle Build Action
-      uses: gradle/gradle-build-action@v2.3.3
+        java-version: 17     
 
     - name: Gradle Test
       run: ./gradlew test
